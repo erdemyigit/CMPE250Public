@@ -8,3 +8,5 @@ void mergeSort(T *a, int n);
 
 template<typename T>
 void quickSort(T *a, int n);
+
+#include "sorting.cpp"

@@ -1,5 +1,4 @@
 #include <iostream>
-#include "sorting.h"
 
 using namespace std;
 
@@ -12,5 +11,5 @@ void mergeSort(T *a, int n) {
 }
 
 template<typename T>
-void quicksort(T *a, int n) {
+void quickSort(T *a, int n) {
 }
