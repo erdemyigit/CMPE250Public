@@ -10,7 +10,7 @@ int *randomArray(int n) {
 	srand(1);
 
 	int *a = new int[n];
-	for (int i = 0; i < ARRAY_SIZE; i++) {
+	for (int i = 0; i < n; i++) {
 		a[i] = (rand() % 100);
 	}
 	return a;
@@ -18,7 +18,7 @@ int *randomArray(int n) {
 
 void printArray(int *a, int n) {
 	for (int i = 0; i < n; i++) {
-		cout << a[i];
+		cout << a[i] << " ";
 	}
 	cout << endl;
 	return;
@@ -33,18 +33,22 @@ int main() {
 	printArray(a, ARRAY_SIZE);
 	insertionSort(a, ARRAY_SIZE);
 	printArray(a, ARRAY_SIZE);
+	cout << endl;
+
 
 	cout << "mergeSort" << endl;
 	a = randomArray(ARRAY_SIZE);
 	printArray(a, ARRAY_SIZE);
 	mergeSort(a, ARRAY_SIZE);
 	printArray(a, ARRAY_SIZE);
+	cout << endl;
 
 	cout << "quicksort" << endl;
 	a = randomArray(ARRAY_SIZE);
 	printArray(a, ARRAY_SIZE);
 	quickSort(a, ARRAY_SIZE);
 	printArray(a, ARRAY_SIZE);
+	cout << endl;
 
 	return 0;
 }
