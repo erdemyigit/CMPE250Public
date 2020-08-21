@@ -13,8 +13,8 @@ public:
 	void print(const std::ostream &) const;
 
 private:
-	unsigned int currentSize;
-	unsigned int maxSize;
+	unsigned int size;
+	unsigned int capacity;
 	T* array;
 };
 
