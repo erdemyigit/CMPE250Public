@@ -14,6 +14,7 @@ int MatrixChainOrderDP(int p[], int n, ... s, ... m) {
 
 // Given the matrix s (described above), print a string such as
 // ((A_1 A_2) ((A_3 A_4) A_5))
+// The above result is obtained from s[1,5]=2, s[3,5]=4 and the trivial values s[1,2]=1 and s[3,4]=3.
 // that describes the optimal parenthesization determined by s.
 void printOptimalParenthesization(int n, ... s) {
 
